@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "smart-rain-dataset"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : #&name "Your Name"
+description              : #&description "personal description"
 url                      : https://smart-rain-dataset.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "smart-rain-dataset/smart-rain-dataset.github.io"
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Charles ZHANG"
-  avatar           : "profile.png"
+  avatar           : #"profile.png"
   bio              : "PhD Student At National University of Singapore"
   location         : #"Location"
   employer         :
