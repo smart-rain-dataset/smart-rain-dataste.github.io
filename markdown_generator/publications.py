@@ -74,26 +74,26 @@ for row, item in publications.iterrows():
     
     md += """collection: publications"""
     
-    #md += """\npermalink: /publication/""" + html_filename
+    md += """\npermalink: /publication/""" + html_filename
     
-    # if len(str(item.excerpt)) > 5:
-    #     md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
+    if len(str(item.excerpt)) > 5:
+        md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
     
-    #md += "\ndate: " + str(item.pub_date) 
+    md += "\ndate: " + str(item.pub_date) 
     
-    #md += "\nvenue: '" + html_escape(item.venue) + "'"
+    md += "\nvenue: '" + html_escape(item.venue) + "'"
     
     if len(str(item.paper_url)) > 5:
         md += "\npaperurl: '" + item.paper_url + "'"
     
-    #md += "\ncitation: '" + html_escape(item.citation) + "'"
+    md += "\ncitation: '" + html_escape(item.citation) + "'"
     
     md += "\n---"
     
     ## Markdown description for individual page
     
     if len(str(item.paper_url)) > 5:
-        md += "\n\n<a href='" + item.paper_url + "'>Find paper here</a>\n" 
+        md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
         
     if len(str(item.excerpt)) > 5:
         md += "\n" + html_escape(item.excerpt) + "\n"
