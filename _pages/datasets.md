@@ -3,57 +3,14 @@ layout: archive
 title: "Datasets"
 permalink: /datasets/
 author_profile: true
-redirect_from:
-  - /resume
+#redirect_from:
+#  - /resume
 ---
 
-{% include base_path %}
+SMART-Rain Dataset
+======
+Our dataset is created in Singapore, where the rainfall is abundant all year round. We drove a full-sized vehicle equipped with a 3D LiDAR, cameras, and a rainfall measurement sensor to collect data in various rainy conditions. In total, we have collected 31.8 hours of rainy data (light rain: 13.2 hours, moderate rain: 15.0 hours, heavy rain: 3.6 hours) from 29 data collection trips and 8.8 hours of data in clear weather from 8 trips. Further, we selected and annotated 5 K images for 2D object detection evaluation in light rain, moderate rain, heavy rain, and mixed weather conditions. Our dataset has three unique features compared to other datasets: 1, containing a significant amount of representative data from various rainy conditions; 2, collecting rainfall intensity measurements accompanied with sensor data. 3, categorizing data based on rainfall levels to study the rain influence on algorithm performance. More information can be found in the paper. The download link for our dataset will be provided soon.
 
-Education
+SMART-Degradation Dataset
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+SMART-Degradation is another dataset for studying autonomous driving in rainy weather. Unlike the SMART-Rain dataset which only contains raw sensor measurements, this new dataset consists of post-processed LiDAR scans specifically for studying LiDAR sensor degradation. This dataset was also collected by driving a full-size vehicle equipped with a 32-channel 3D LiDAR under various rainy situations in an urban environment. The post-processed LiDAR scans are called LiDAR pairs: each pair includes one LiDAR scan from clear weather and one scan from rainy weather at the same location. These LiDAR scan pairs can be used to study the degradation process of rain on laser measurements. More information can be found in the paper. The download link for our dataset will be provided soon.
